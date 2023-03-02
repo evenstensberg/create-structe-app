@@ -1,13 +1,20 @@
 {
   "name": "create-structe-app",
-  "type": "module",
   "version": "0.0.0",
   "description": "Scaffolding for Structe",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "start": "node index.js"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@clack/prompts": "^0.6.1"
+  },
+  "devDependencies": {
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5"
   }
 }
