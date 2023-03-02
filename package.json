@@ -1,0 +1,13 @@
+{
+  "name": "create-structe-app",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Scaffolding for Structe",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.6.1"
+  }
+}
